@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prove HTML</title>
+</head>
+<body>
+    <!--i tag h stanno per headings e sono numerati da 1 a 6 in ordine d'importanza-->
+    <h1>Prova titoli</h1>
+    <h2>Più piccolo</h2>
+    <p>i tag h stanno per headings e sono numerati da 1 a 6 in ordine d'importanza</p>
+
+    <h2>I paragrafi</h2>
+    <p>Si utilizzano i tag <strong>p</strong> oppure <strong>div</strong>. Il risultato e l'utilizzo che ne fa
+    sono leggermente diversi ma sono entrambi dei tag di blocco</p>
+    <div>Questo è un blocco di codice individuato da un <strong>div</strong>.</div>
+
+    <h2>I link o collegamenti ipertestuali</h2>
+    <p>I collegamenti permettono di spostarsi quando vengono selezionati con il click del mouse.
+    Il tag in questo caso è <strong>a</strong> ed è un tag di tipi in linea (inline).
+    Può spostare verso una qualsiasi pagina esterna o interna al sito oppure anche ad altre parti del documento</p>
+    <p>Ad esempio questo è un collegamento verso
+        <a href="https://www.iiscastelli.edu.it" target="_blank">il nostro istituto</a>.</p>
+
+    <h2>Il tag per inserire le immagini</h2>
+    <p>Per inserire le immagini il tag è <strong>img</strong> che è sempre di tipo inline come quello per creare i link.
+    Il funzionamento è molto simile a quello del link, nel senso che bisogna anche in questo caso indicare la risorsa, cioè l'immagine.</p>
+    <p>Questo è un esempio in cui includo un'immagine proveniente da internet:
+    <img src="https://www.iiscastelli.edu.it/images/iislogo.gif"> essendo un elemento inline è come se fosse una qualsiasi lettera
+        di un testo.
+    </p>
+    <p>Si può anche includere un'immagine proveniente dallo stesso sito della pagina che la include <img src="img/iislogo.gif"></p>
+
+    <h2>Elenchi puntati e numerati</h2>
+    <p>Gli elenchi vengono ottenuti con i tag <strong>ul</strong> (puntati, unordered list) oppure <strong>ol</strong>
+    (numerata, ordered list). All'interno di questi tag vanno inseriti gli item della lista con il tag <strong>li</strong></p>
+    <h3>Esempio di lista puntata</h3>
+    <ul>
+        <li>Primo punto</li>
+        <li>Secondo punto</li>
+        <li>Eccetera.....</li>
+    </ul>
+    <h3>Esempio di lista numerata</h3>
+    <ol>
+        <li>Primo punto</li>
+        <li>Secondo punto</li>
+        <li>Eccetera.....</li>
+    </ol>
+
+    <p><a href="deployment.html" target="_blank">Link alle istruzioni di deployment</a></p>
+
+    <h2>Tabelle</h2>
+
+    <p>Le tabelle HTML sono comandate dalle colonne. I tag di base da utilizzare sono il tag <strong>table</strong>, che individua la tabella
+    il tag <strong>tr</strong>, che individua la singola riga, e il tag <strong>db</strong>, che individua la singola colonna all'interno di una riga.</p>
+
+    <h3>Esempio di tabella:</h3>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+
+    <h3>Intestazione di tabella</h3>
+    <p>Volendo aggiungere un'intestazione con i nomi delle colonne, è meglio separare le righe della tabella in due
+    parti distinte, <strong>thead</strong>, e <strong>hbody</strong></p>
+    <table>
+        <thead>
+            <tr>
+                <td>prima</td>
+                <td>seconda</td>
+                <td>terza</td>
+                <td>quarta</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>I form</h3>
+    <p>I form (o moduli), sono il meccanismo che html dispone per poter acquisire dell'input da parte dell'utente
+    mostrando dei controlli grafici standard (campo di testo, menù a tendina, check box...), che gli permetteranno d'inviare dei
+    valori all'applicazione.</p>
+    <p>Il tag principale è il tag <strong>form</strong> che è il contenitore dei vari campi d'input. Di questo tag i due sttributi principali
+    che utilizzeremo sono gli attributi <strong>action</strong> e <strong>method</strong></p>
+
+    <h3>Il campo di testo</h3>
+    <p>Il campo di testo è il solito rettangolo che permette all'utente di inserire del testo libero e corto.
+    il tag è <strong>input</strong> in cui bisogna specificare il tipo con l'attributo <strong>type</strong>, che in
+    questo caso deve valere <strong>text</strong>.</p>
+
+    <h3>Esempio:</h3>
+    <form action="" method="post">
+        Nome:<input type="text"></input>
+    </form>
+
+    <h3>Il bottone di invio</h3>
+    <p>Quasi sempre nei form c'è un tasto di invio dei tag, il modo più semplice per inserirlo è ancora usare il tag
+    input, però come tipo <strong>submit</strong>.</p>
+    <form action="" method="post">
+        Nome:<input type="text"></input><input type="submit"></input>
+    </form>
+
+
+</body>
+</html>

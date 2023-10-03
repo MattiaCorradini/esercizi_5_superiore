@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS</title>
+    <style>
+        h2 {
+            font-family: sans-serif;
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>CSS - Cascading Style Sheet</h1>
+  <p>Dove HTML descrive la struttura di un certo contenuto, i CSS sono pensati per dare
+     vesta grafica dignitosa a un contenuto che altrimenti sarebbe minimale.</p>
+
+  <h2>Tipologie di utilizzo di CSS</h2>
+    <p>
+        Possono essere utilizzati in tre modi diversi:
+        <ol>
+      <li>Inline: sono inclusi nel tag che si vuole modificare, utilizzando l'attributo <strong>style</strong></li>
+      <li>Incorporati: sono inclusi nella sezione head della pagina sottoforma di regole CSS all'interno del tag style</li>
+      <li>Esterni: vengono inclusi come file CSS, all'interno dell'head utilizzando il tag <strong>link</strong>/li>
+        </ol>
+        Dall'alto verso il basso sono più specifici, cioè un CSS inline ha la precedenza su uno incorporato, che a sua volta
+        ha la precedenza su uno esterno.
+        Viceversa i fogli esterno permettono omogeneità alla pagina su tutto il sito, quelli incorporati su tutta la pagina,
+        quelli inline solo dove sono applicati
+    </p>
+    <h2>Come sono fatti</h2>
+    <p class="imp">I fogli di stile sono insiemi di regole, e ogni regola è del tipo <pre>nome:valore;</pre> e sono applicate
+       su elementi selezionati attraverso un selettore</p>
+    <p>Esempio:
+        <pre id="css_rule">
+          p {
+            font-size : 12pt;
+            color: blue;
+          }
+        </pre>
+    Dove p è il selettore, in questo caso un paragrafo, e font-size e color sono due proprietà e 12pt e bliue sono rispettivamente
+    i loro valori.
+    </p>
+    <p style="font-size: 12pt; color: blue">Questo è un paragrafo il cui font è stato modificato tramite una regola inline.</p>
+
+    <h2>Selezionare classi e id</h2>
+    <p class="imp">A volte può essere necessario andare ad individuare una qualche sezione in modo particolare, allora possono essere utilizzati
+    gli attributi class (per individuare tutti gli elementi che condividono qualcosa) e id (per individuare un solo elemento).</p>
+</body>
+</html>
