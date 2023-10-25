@@ -1,0 +1,48 @@
+/* Stile del corpo della pagina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Titolo della pagina */
+h1 {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+}
+
+/* Stile dei paragrafi */
+p {
+    margin: 20px;
+    font-size: 16px;
+}
+
+/* Stile delle tabelle */
+table {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Stile delle righe attive nelle tabelle */
+tr.active {
+    background-color: #f0f0f0;
+}

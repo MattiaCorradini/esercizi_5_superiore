@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Biblioteca</h1>
+    <p>Il seguente diagramma ER ha lo scopo di rappresentare una biblioteca. Le entità rappresentano gli utenti, ossia coloro che
+        usufruiscono del servizio bibliotecario, i libri che gli utenti possono prendere in prestito e l'editore che ha pubblicato il libro.</p>
+    <img src="biblioteca.png" alt="" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+    <p>In tabelle la situazione è questa:</p><br>
+    <p>Libro:</p>
+    <table class="table" id="libro">
+        <thead>
+        <tr>
+            <th>id_libro</th>
+            <th>titolo</th>
+            <th>autore</th>
+            <th>id_editore</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="active">
+            <td>1</td>
+            <td>Il Barone Rampante</td>
+            <td>Italo Calvino</td>
+            <td>1</td>
+        </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <p>Editore:</p>
+    <table class="table" id="editore">
+        <thead>
+        <tr>
+            <th>id_editore</th>
+            <th>nome</th>
+            <th>città</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="active">
+            <td>1</td>
+            <td>Mondadori</td>
+            <td>Milano</td>
+        </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <p>Utente:</p>
+    <table class="table" id="utente">
+        <thead>
+        <tr>
+            <th>id_utente</th>
+            <th>nome</th>
+            <th>cognome</th>
+            <th>email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="active">
+            <td>1</td>
+            <td>Mattia</td>
+            <td>Corradini</td>
+            <td>corradini.mattia05@gmail.com</td>
+        </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <p>Prede in prestito:</p>
+    <table class="table" id="prende_in_prestito">
+        <thead>
+        <tr>
+            <th>data_restituzione</th>
+            <th>data_prestito</th>
+            <th>id_libro</th>
+            <th>id_utente</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="active">
+            <td>10/09/2023</td>
+            <td>10/10/2023</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <img src="bibliotecatab.png" alt="" style="max-width: 50%; height: 50%; display: block; margin: 0 auto;">
+</body>
+</html>
