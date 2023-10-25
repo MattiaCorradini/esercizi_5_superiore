@@ -3,6 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Prove HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: lavender;
+        }
+
+        h1 {
+            color: #ff0000;
+            font-size: 28px;
+        }
+
+        h2 {
+            color: #ff4848;
+            font-size: 24px;
+        }
+
+        h3 {
+            color: #ffa1a1;
+            font-size: 20px;
+        }
+
+        p {
+            line-height: 1.4;
+        }
+
+        a {
+            color: #0074d9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        table {
+            background-color: white;
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        thead {
+            background-color: #ead967;
+        }
+
+        form {
+            margin: 20px 0;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            margin-left: 20px;
+            height: 38px;
+            background-color: #0074d9;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <!--i tag h stanno per headings e sono numerati da 1 a 6 in ordine d'importanza-->
@@ -124,14 +203,14 @@
 
     <h3>Esempio:</h3>
     <form action="" method="post">
-        Nome:<input type="text"></input>
+        Nome: <input type="text">
     </form>
 
     <h3>Il bottone di invio</h3>
     <p>Quasi sempre nei form c'è un tasto di invio dei tag, il modo più semplice per inserirlo è ancora usare il tag
     input, però come tipo <strong>submit</strong>.</p>
     <form action="" method="post">
-        Nome:<input type="text"></input><input type="submit"></input>
+        Nome: <input type="text"><input type="submit">
     </form>
 
 
