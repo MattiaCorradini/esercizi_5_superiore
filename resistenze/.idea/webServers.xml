@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="141d1d08-aae2-4c31-aaf1-11b80b8e62d4" name="winnie" url="http://10.4.55.123/~corra/resistenze/resistenze.tpl">
+        <fileTransfer rootFolder="/home/corra/public_html/resistenze" accessType="SFTP" host="10.4.55.123" port="22" sshConfigId="efdfe361-8e7a-41be-8926-b7d5920e2baa" sshConfig="winnie">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
