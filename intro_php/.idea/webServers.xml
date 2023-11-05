@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c8a53125-2ff4-4402-8ed5-fc52222bab7e" name="winnie" url="http://10.4.55.123/~corra/moltiplicatore/moltiplicatore.tpl">
+        <fileTransfer rootFolder="/home/corra/public_html/moltiplicatore/" accessType="SFTP" host="10.4.55.123" port="22" sshConfigId="bf7be4ba-4637-48d6-ac53-2aa45c827aac" sshConfig="corra@10.4.55.123:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
