@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    margin: 5px 0;
+}
+
+div {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 500px;
+    float: left;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+img {
+    max-width: 60%;
+    max-height: 100%;
+    height: auto;
+    margin-left: 45px;
+    margin-bottom: 10px;
+}
+
+a {
+    display: block;
+}
+
+hr {
+    clear: both;
+}

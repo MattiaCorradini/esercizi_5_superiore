@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="8c22efa8-e0e1-4e92-8334-7fa09a53b1e4" name="winnie" url="http://10.4.55.123/~corra/biglietti/form.tpl">
+        <fileTransfer rootFolder="/home/corra/public_html/biglietti" accessType="SFTP" host="10.4.55.123" port="22" sshConfigId="ac54efe4-ff30-425a-b15d-74dbd7bf9696" sshConfig="corra@10.4.55.123:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
