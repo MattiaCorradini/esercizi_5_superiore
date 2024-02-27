@@ -1,0 +1,12 @@
+{
+    "require": {
+        "league/plates": "^3.5",
+      "ext-pdo": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Util\\": "Util/",
+            "Model\\": "Model/"
+        }
+    }
+}

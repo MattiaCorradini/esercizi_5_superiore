@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="739ca8d7-842e-4097-8e7f-2e58048aebd9" name="winnie" url="http://10.4.55.123/~corra/pdo">
+        <fileTransfer rootFolder="/home/corra/public_html/pdo" accessType="SFTP" host="10.4.55.123" port="22" sshConfigId="a0a1cac8-cb4d-4685-9218-2a826911d111" sshConfig="corra@10.4.55.123:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
