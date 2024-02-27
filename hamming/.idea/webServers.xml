@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b85cfd82-952e-4a8a-aa40-0b7ae899b2a3" name="winnie" url="http://10.4.55.123/~corra/hamming/hamming.tpl">
+        <fileTransfer rootFolder="/home/corra/public_html/hamming" accessType="SFTP" host="10.4.55.123" port="22" sshConfigId="02edfbab-a901-4b70-a818-a667bec20857" sshConfig="corra@10.4.55.123:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
