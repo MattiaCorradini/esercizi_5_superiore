@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f48f3d42-053b-42be-a247-427f62c682d3" name="winnie" url="http://10.4.55.123/~corra/insiemi/insiemi.tpl">
+        <fileTransfer rootFolder="/home/corra/public_html/insiemi" accessType="SFTP" host="10.4.55.123" port="22" sshConfigId="e6fb2035-7fa9-40bc-80ee-f43294404b51" sshConfig="corra@10.4.55.123:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
