@@ -8,6 +8,17 @@
 <body>
 <div>
     <h1>Numero di persone che parlano inglese in ogni continente</h1>
+    <pre>
+        <h2>Ecco la query che mi ha permesso di farlo:</h2>
+        <code>
+            SELECT country.Continent AS Continente, FLOOR(SUM(country.Population * countrylanguage.Percentage / 100))<br>
+            FROM country<br>
+            INNER JOIN countrylanguage ON countrylanguage.CountryCode = country.Code<br>
+            WHERE countrylanguage.Language = "English"<br>
+            GROUP BY country.Continent<br>
+            ORDER BY Parlanti DESC;<br>
+        </code>
+    </pre>
     <a href="index.php">Fai un'altra domanda</a>
 </div>
 <table>

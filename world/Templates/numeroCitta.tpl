@@ -8,6 +8,17 @@
 <body>
 <div>
     <h1>Numero di città per ogni stato</h1>
+    <pre>
+        <h2>Ecco la query che mi ha permesso di farlo:</h2>
+        <code>
+            SELECT country.Name, COUNT(*) as Citta<br>
+            FROM country<br>
+            INNER JOIN city ON city.CountryCode = country.Code<br>
+            GROUP BY country.Code<br>
+            HAVING Citta >= 10<br>
+            ORDER BY Citta DESC;<br>
+        </code>
+    </pre>
     <a href="index.php">Fai un'altra domanda</a>
 </div>
 <table>
