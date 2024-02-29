@@ -16,6 +16,7 @@ class WorldRepository {
         $result = $pdo->query($sql);
         return $result->fetchAll();
     }
+
     public static function english(): array {
         $pdo = Connection::getInstance();
         $sql = 'SELECT country.Continent AS Continente, FLOOR(SUM(country.Population * countrylanguage.Percentage / 100)) AS Parlanti
@@ -27,6 +28,7 @@ class WorldRepository {
         $result = $pdo->query($sql);
         return $result->fetchAll();
     }
+
     public static function max(): array {
         $pdo = Connection::getInstance();
         $sql = 'SELECT country.Name AS Stato, FLOOR(country.Population * countrylanguage.Percentage / 100) AS Persone
@@ -35,6 +37,17 @@ class WorldRepository {
                 AND country.Population * countrylanguage.Percentage = (SELECT MAX(country.Population * countrylanguage.Percentage)
                                                                        FROM country INNER JOIN countrylanguage ON country.Code = countrylanguage.CountryCode
                                                                        WHERE countrylanguage.Language = "English");';
+        $result = $pdo->query($sql);
+        return $result->fetchAll();
+    }
+
+    public static function GNP(): array {
+        $pdo = Connection::getInstance();
+        $sql = 'SELECT country.Name, country.GNP/country.Population AS GNP
+                FROM country
+                WHERE country.GNP/country.Population = (SELECT MIN(country.GNP/country.Population)
+                                                        FROM country
+                                                        WHERE country.GNP > 0);';
         $result = $pdo->query($sql);
         return $result->fetchAll();
     }

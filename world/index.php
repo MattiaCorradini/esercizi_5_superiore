@@ -18,6 +18,10 @@ if (isset($_POST['query'])) {
             $ing_max = \Model\WorldRepository::max();
             echo $template->render('max_ing', ['max' => $ing_max]);
             break;
+        case 4:
+            $GNP = \Model\WorldRepository::GNP();
+            echo $template->render('gnp', ['GNP' => $GNP]);
+            break;
         default:
             echo $template->render('index', []);
             break;

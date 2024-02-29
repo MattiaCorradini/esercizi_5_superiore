@@ -14,6 +14,7 @@
         <option value="1">Quante città ci sono per ogni stato?</option>
         <option value="2">Quante persone parlano inglese in ogni continente?</option>
         <option value="3">Qual è lo stato con più persone che parlano inglese e in quanti lo parlano?</option>
+        <option value="4">Qual è lo stato con il reddito pro capite più basso?</option>
     </select>
     <input type="submit" value="Interroga il DB">
 </form>
