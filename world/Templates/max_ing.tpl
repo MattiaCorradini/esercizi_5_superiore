@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Stato con più parlanti inglese</title>
-    <link rel="stylesheet" href="styles/one_row.css">
+    <link rel="stylesheet" href="styles/tables.css">
 </head>
 <body>
 <div>

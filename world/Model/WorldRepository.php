@@ -51,4 +51,65 @@ class WorldRepository {
         $result = $pdo->query($sql);
         return $result->fetchAll();
     }
+
+    public static function NumStati(): array {
+        $pdo = Connection::getInstance();
+        $sql = 'SELECT country.Continent, COUNT(country.Name) AS NumeroStati
+                From country
+                GROUP BY country.Continent
+                ORDER BY NumeroStati DESC;';
+        $result = $pdo->query($sql);
+        return $result->fetchAll();
+    }
+
+    public static function MaxPop(): array {
+        $pdo = Connection::getInstance();
+        $sql = 'SELECT country.Name, country.Population
+                FROM country
+                WHERE country.Population = (SELECT MAX(country.Population) FROM country);';
+        $result = $pdo->query($sql);
+        return $result->fetchAll();
+    }
+
+    public static function oldest(): array {
+        $pdo = Connection::getInstance();
+        $sql = 'SELECT country.Name, country.IndepYear
+                FROM country
+                WHERE country.IndepYear = (SELECT MIN(country.IndepYear) FROM country);';
+        $result = $pdo->query($sql);
+        return $result->fetchAll();
+    }
+
+    public static function asian(): array {
+        $pdo = Connection::getInstance();
+        $sql = 'SELECT Name , GNP/Population*1000000 AS GNP
+                FROM country
+                WHERE Continent = "Asia"
+                AND GNP/Population = (SELECT MAX(GNP/Population)
+                                      FROM country 
+                                      WHERE Continent = "Asia");';
+        $result = $pdo->query($sql);
+        return $result->fetchAll();
+    }
+
+    public static function ger(): array {
+        $pdo = Connection::getInstance();
+        $sql = 'SELECT AVG(city.Population) AS media
+                FROM country
+                INNER JOIN city ON country.Code = city.CountryCode
+                WHERE country.Name = "Germany";';
+        $result = $pdo->query($sql);
+        return $result->fetchAll();
+    }
+
+    public static function list(): array {
+        $pdo = Connection::getInstance();
+        $sql = 'SELECT country.Name, COUNT(*) AS c, AVG(city.Population) AS d
+                FROM country
+                INNER JOIN city ON country.Code = city.CountryCode
+                GROUP BY country.Name
+                ORDER BY d DESC;';
+        $result = $pdo->query($sql);
+        return $result->fetchAll();
+    }
 }
