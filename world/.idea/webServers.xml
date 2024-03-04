@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="aa3f619b-3d6c-4c2f-aff2-f7010314ed66" name="winnie" url="http://10.4.55.123/~corra/world/index.tpl">
+        <fileTransfer rootFolder="/home/corra/public_html/world" accessType="SFTP" host="10.4.55.123" port="22" sshConfigId="96c6a082-7528-4e10-a871-49066fe86279" sshConfig="corra@10.4.55.123:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
