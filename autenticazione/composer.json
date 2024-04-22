@@ -1,5 +1,22 @@
 {
-    "require": {
-        "league/plates": "^3.5"
+  "name": "vendor_name/autenticazione",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "GPL-2.0-only",
+  "authors": [
+    {
+      "name": "alex",
+      "email": "alessandro.bugatti@gmail.com"
     }
+  ],
+  "require": {
+    "league/plates": "^3.5",
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Util\\": "Util/",
+      "Model\\": "Model/"
+    }
+  }
 }
