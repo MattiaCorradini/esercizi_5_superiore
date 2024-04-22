@@ -10,15 +10,6 @@
  */
 ?>
 
-<style>
-    .boh{
-        border: 3px black solid;
-        height: 40px;
-        width: 90%;
-        margin: 0 auto;
-    }
-</style>
-
 <?php $this->layout('home', ['titolo' => 'Esempio autenticazione']) ?>
 
 <header class="navbar">
@@ -38,9 +29,30 @@
     </section>
 </header>
 
-<h1>Sei loggato</h1>
+
+<h1>I tuoi voti</h1>
 
 
+<table class="table table-striped table-hover">
 
+    <thead>
+        <tr>
+            <th>Materia</th>
+            <th>Voto</th>
+            <th>Data</th>
+        </tr>
 
-<a href="index.php?action=valutazioni">Vai alle valutazioni</a>
+    </thead>
+
+    <?php foreach($voti as $voto) :?>
+
+    <tr class="active">
+        <td> <?=$voto['materia'] ?> </td>
+        <td> <?=$voto['voto'] ?> </td>
+        <td> <?=$voto['data'] ?> <td>
+
+    </tr>
+
+    <?php endforeach;?>
+
+</table>
